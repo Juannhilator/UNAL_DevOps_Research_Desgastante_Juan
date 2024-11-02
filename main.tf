@@ -14,6 +14,6 @@ resource "null_resource" "fibonacci" {
     always_run = "${timestamp()}"
   }
   provisioner "local-exec" {
-    command = "bash fibonacci.py"
+    command = "python3 fibonacci.py"
   }
 }
